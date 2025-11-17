@@ -320,8 +320,23 @@
          <h4 class="text-2xl font-bold text-gray-800 flex items-center mb-6">
           <svg class="w-8 h-8 mr-3 text-purple-600" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="14.828 14.828a4 4 0 01-5.656 0M9 10h1.586a1 1 0 01.707.293l2.414 2.414a1 1 0 00.707.293H15M9 10v4a2 2 0 002 2h2a2 2 0 002-2v-4M9 10V9a2 2 0 012-2h2a2 2 0 012 2v1"></path>
           </svg> Video Pembelajaran</h4>
-         <div id="video-content" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"><!-- Video content akan dimuat di sini -->
-         </div>
+         'chapter-1-video': {
+    title: 'Video Pembelajaran Bab 1',
+    html: `
+        <div class="p-4 bg-white rounded-xl shadow-lg">
+            <h3 class="text-xl font-semibold mb-4 text-gray-700">Video Utama Bab 1</h3>
+            <div class="aspect-video">
+                <iframe 
+                    class="w-full h-full rounded-lg"
+                    src="https://www.youtube.com/embed/VIDEO_ID_BAB_1" 
+                    title="Video Pembelajaran Bab 1" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    `
         </div><!-- Contoh Percakapan -->
         <div class="bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg p-8 mb-8">
          <h4 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
@@ -4837,4 +4852,5 @@
         }
     </script>
  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99f96ddaa74f6d1c',t:'MTc2MzMyMTcwMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
 </html>
